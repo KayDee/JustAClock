@@ -31,7 +31,12 @@ module.exports = {
     new HTMLWebPackPlugin({
       template: "./src/index.html"
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      '_Components': path.resolve(__dirname, './src/components/')
+    }
+  }
 
 
 };
