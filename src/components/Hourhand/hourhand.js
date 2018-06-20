@@ -7,7 +7,9 @@ class Hourhand extends Component{
     let time = this.props.h + (this.props.m / 60)
     let angle = (time / 12) * 360
     return(
-      <div className="hr" style={{transform: `translate3d(0px,0,0) rotate(${angle - 90}deg)`}}></div>
+      <div className="hr-container" style={{transform: `rotate(${angle - 90}deg)`}}>
+        <div className="hr" ></div>
+      </div>
     )
   }
 
